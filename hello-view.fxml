@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fsttanger.khawlaproject.HelloController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-83.0" prefHeight="400.0" prefWidth="298.0" style="-fx-background-color: #e1c7ba;">
+               <children>
+                  <AnchorPane layoutX="90.0" layoutY="-112.0" prefHeight="400.0" prefWidth="107.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="36.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../khawlaproject/images/cadenas.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="enterTextField" layoutY="282.0" prefHeight="26.0" prefWidth="173.0" promptText="username" />
+                        <PasswordField fx:id="enterPasswordField" layoutY="319.0" prefHeight="25.0" prefWidth="173.0" promptText="password" />
+                        <Button fx:id="loginButton" layoutX="-59.0" layoutY="376.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" style="-fx-background-color: #f8efe7;" text="login" />
+                        <Label fx:id="loginMessageLabel" layoutX="-54.0" layoutY="351.0" prefHeight="17.0" prefWidth="220.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="22.0" layoutY="174.0" text="username">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="207.0" text="password">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="cancelButton" layoutX="33.0" layoutY="300.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="233.0" style="-fx-background-color: #f8efe7;" text="cancel" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <ImageView fitHeight="550.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../khawlaproject/images/canvakhaoula.jpeg" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
